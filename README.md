@@ -41,3 +41,17 @@ Features (bugs) added so far (SPOILERS):
  - cajon_box - suggesting ideas to the mod
  - Bashbush - suggesting ideas to the mod
  - dsinkerii - coding the mod
+
+
+
+
+
+
+
+
+
+
+
+
+
+![serious](https://github.com/dsinkerii/BrokenMinecraft/assets/104655906/1290c06e-087f-4db1-acc5-98dd72bfbdc9)
