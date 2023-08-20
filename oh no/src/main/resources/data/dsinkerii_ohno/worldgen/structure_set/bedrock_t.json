@@ -1,0 +1,17 @@
+{
+    "structures": [
+      {
+        "structure": "dsinkerii_ohno:bedrock_t",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 1642136464,
+
+      "spacing": 2,
+  
+      "separation": 1,
+  
+      "type": "minecraft:random_spread"
+    }
+  }
