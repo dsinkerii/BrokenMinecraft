@@ -1,0 +1,746 @@
+[14:16:30] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20 with Fabric Loader 0.14.22
+[14:16:30] [main/INFO] (FabricLoader) Loading 46 mods:
+	- dsinkerii_ohno 1.0.0
+	- fabric-api 0.83.0+1.20
+	- fabric-api-base 0.4.29+b04edc7a27
+	- fabric-api-lookup-api-v1 1.6.34+4d8536c927
+	- fabric-biome-api-v1 13.0.10+b3afc78b27
+	- fabric-block-api-v1 1.0.9+e022e5d127
+	- fabric-blockrenderlayer-v1 1.1.39+b3afc78b27
+	- fabric-client-tags-api-v1 1.0.20+b3afc78b27
+	- fabric-command-api-v2 2.2.11+b3afc78b27
+	- fabric-content-registries-v0 4.0.7+b3afc78b27
+	- fabric-convention-tags-v1 1.5.3+b3afc78b27
+	- fabric-crash-report-info-v1 0.2.18+aeb40ebe27
+	- fabric-data-generation-api-v1 12.1.10+b3afc78b27
+	- fabric-dimensions-v1 2.1.51+b3afc78b27
+	- fabric-entity-events-v1 1.5.21+b3afc78b27
+	- fabric-events-interaction-v0 0.6.0+b3afc78b27
+	- fabric-game-rule-api-v1 1.0.38+b04edc7a27
+	- fabric-gametest-api-v1 1.2.10+b3afc78b27
+	- fabric-item-api-v1 2.1.26+b3afc78b27
+	- fabric-item-group-api-v1 4.0.7+b3afc78b27
+	- fabric-key-binding-api-v1 1.0.36+fb8d95da27
+	- fabric-lifecycle-events-v1 2.2.20+b3afc78b27
+	- fabric-loot-api-v2 1.1.37+b3afc78b27
+	- fabric-message-api-v1 5.1.6+b3afc78b27
+	- fabric-mining-level-api-v1 2.1.47+b3afc78b27
+	- fabric-models-v0 0.3.35+b3afc78b27
+	- fabric-networking-api-v1 1.3.8+b3afc78b27
+	- fabric-object-builder-api-v1 11.0.6+b3afc78b27
+	- fabric-particles-v1 1.0.28+b3afc78b27
+	- fabric-recipe-api-v1 1.0.18+b3afc78b27
+	- fabric-registry-sync-v0 2.2.6+b3afc78b27
+	- fabric-renderer-api-v1 3.0.1+b3afc78b27
+	- fabric-renderer-indigo 1.3.1+b3afc78b27
+	- fabric-rendering-data-attachment-v1 0.3.33+b3afc78b27
+	- fabric-rendering-fluids-v1 3.0.26+b3afc78b27
+	- fabric-rendering-v1 3.0.6+b3afc78b27
+	- fabric-resource-conditions-api-v1 2.3.4+b3afc78b27
+	- fabric-resource-loader-v0 0.11.7+f7923f6d27
+	- fabric-screen-api-v1 2.0.6+b3afc78b27
+	- fabric-screen-handler-api-v1 1.3.27+b3afc78b27
+	- fabric-sound-api-v1 1.0.12+b3afc78b27
+	- fabric-transfer-api-v1 3.2.2+b3afc78b27
+	- fabric-transitive-access-wideners-v1 4.2.0+b3afc78b27
+	- fabricloader 0.14.22
+	- java 17
+	- minecraft 1.20
+[14:16:30] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[14:16:30] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[14:16:30] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[14:16:30] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[14:16:34] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 150 milliseconds
+[14:16:35] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:16:36] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.<init>(YggdrasilUserApiService.java:55) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createUserApiService(YggdrasilAuthenticationService.java:124) ~[authlib-4.0.43.jar:?]
+	at net.minecraft.client.MinecraftClient.createUserApiService(MinecraftClient.java:733) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:442) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:85) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
+	... 9 more
+[14:16:36] [Render thread/INFO] (Minecraft) Setting user: Player366
+[14:16:36] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[14:16:36] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[14:16:37] [Render thread/ERROR] (Minecraft) Error while loading the narrator
+com.mojang.text2speech.Narrator$InitializeException: Failed to load library flite
+	at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:69) ~[text2speech-1.17.9.jar:?]
+	at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+	at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+	at net.minecraft.client.util.NarratorManager.<init>(NarratorManager.java:19) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:640) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.14.22.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: java.lang.UnsatisfiedLinkError: Unable to load library 'flite':
+libflite.so: cannot open shared object file: No such file or directory
+libflite.so: cannot open shared object file: No such file or directory
+Native library (linux-x86-64/libflite.so) not found in resource path (/home/dsinkerii/projects/OhNo/build/classes/java/main:/home/dsinkerii/projects/OhNo/build/resources/main:/home/dsinkerii/.gradle/caches/fabric-loom/1.20/net.fabricmc.yarn.1_20.1.20+build.1-v2/mappings.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-mappings-parser/0.3.0+build.17/2f10540a290e382a7cd35c16ec3900046a4e252/tiny-mappings-parser-0.3.0+build.17.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-remapper/0.8.2/2cc6565989469ec38893bfb7802b31c0d0d11ea0/tiny-remapper-0.8.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/access-widener/2.1.0/f62a27adbfd8ab4d4fa5681793039f2c0b177155/access-widener-2.1.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.5/dc6ea1875f4d64fbc85e1691c95b96a3d8569c90/asm-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.5/490bacc77de7cbc0be1a30bb3471072d705be4a4/asm-analysis-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.5/19ab5b5800a3910d30d3a3e64fdb00fd0cb42de0/asm-commons-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.5/fd33c8b6373abaa675be407082fdfda35021254a/asm-tree-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.5/64b5a1fc8c1b15ed2efd6a063e976bc8d3dc5ffe/asm-util-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.minecrell/terminalconsoleappender/1.2.0/96d02cd3b384ff015a8fef4223bcb4ccf1717c95/terminalconsoleappender-1.2.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.2.2/54f5efc19bca95d709d9a37d19ffcbba3d21c1a6/oshi-core-6.2.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/dd9b193aef96e973d5a11ab13cd17430c2e4306b/gson-2.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/71.1/9e7d3304c23f9ba5cb71915f7cce23231a57a445/icu4j-71.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/4.0.43/2ff9d747a77570a07a60d32ac77eb6162ad2a2d9/authlib-4.0.43.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/blocklist/1.0.10/5c685c5ffa94c4cd39496c7184c1d122e515ecef/blocklist-1.0.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.1.8/5244ce82c3337bba4a196a3ce858bfaecc74404a/brigadier-1.1.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/6.0.8/3ba4a30557a9b057760af4011f909ba619fc5125/datafixerupper-6.0.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/logging/1.1.1/832b8e6674a9b325a5175a3a6267dfaf34c85139/logging-1.1.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.2.10/da05971b07cbb379d002cf7eaec6a2048211fefc/patchy-2.2.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/3cad216e3a7f0c19b4b394388bc9ffc446f13b14/text2speech-1.17.9.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.15/49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d/commons-codec-1.15.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.82.Final/a544270cf1ae8b8077082f5036436a9a9971ea71/netty-buffer-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.82.Final/b77200379acb345a9ffdece1c605e591ac3e4e0a/netty-codec-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.82.Final/22d148e85c3f5ebdacc0ce1f5aabb1d420f73f3/netty-common-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.82.Final/644041d1fa96a5d3130a29e8978630d716d76e38/netty-handler-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.82.Final/38f665ae8dcd29032eea31245ba7806bed2e0fa8/netty-resolver-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.82.Final/e7c7dd18deac93105797f30057c912651ea76521/netty-transport-classes-epoll-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.82.Final/476409d6255001ca53a55f65b01c13822f8dc93a/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.82.Final/c7350a71920f3ae9142945e25fed4846cce53374/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.82.Final/3e895b35ca1b8a0eca56cacff4c2dde5d2c6abce/netty-transport-native-unix-common-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.82.Final/e431a218d91acb6476ccad5f5aafde50aa3945ca/netty-transport-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.9/bb7ea75ecdb216654237830b3a96d87ad91f8cc5/fastutil-8.5.9.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.12.1/97406a297c852f4a41e688a176ec675f72e8329/jna-platform-5.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.12.1/b1e93a735caea94f503e95e6fe79bf9cdc1e985d/jna-5.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d/httpcore-4.4.15.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.19.0/3b6eeb4de4c49c0fe38a4ee27188ff5fee44d0bb/log4j-core-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.19.0/ea1b37f38c327596b216542bc636cfdc0b8036fa/log4j-api-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.19.0/5c04bfdd63ce9dceb2e284b81e96b6a70010ee10/log4j-slf4j2-impl-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/cbac1b8d30cb4795149c1ef540f912671a8616d0/lwjgl-glfw-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/81716978214ecbda15050ca394b06ef61501a49e/lwjgl-glfw-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/a817bcf213db49f710603677457567c37d53e103/lwjgl-jemalloc-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/33dbb017b6ed6b25f993ad9d56741a49e7937718/lwjgl-jemalloc-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/2623a6b8ae1dfcd880738656a9f0243d2e6840bd/lwjgl-openal-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/f906b6439f6daa66001182ea7727e3467a93681b/lwjgl-openal-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/831a5533a21a5f4f81bbc51bb13e9899319b5411/lwjgl-opengl-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/ab9ab6fde3743e3550fa5d46d785ecb45b047d99/lwjgl-opengl-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/b119297cf8ed01f247abe8685857f8e7fcf5980f/lwjgl-stb-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/3ee7aec8686e52867677110415566a5342a80230/lwjgl-stb-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/ff1914111ef2e3e0110ef2dabc8d8cdaad82347/lwjgl-tinyfd-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/a35110b9471bea8cde826ab297550ee8c22f5035/lwjgl-tinyfd-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/ae58664f88e18a9bb2c77b063833ca7aaec484cb/lwjgl-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/1de885aba434f934201b99f2f1afb142036ac189/lwjgl-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.1/f48d81adce2abf5ad3cfe463df517952749e03bc/slf4j-api-2.0.1.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2/minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/fabric-loader/0.14.22/9dd26439963a78e6ff7be3614c2151a50f9254a3/fabric-loader-0.14.22.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api/0.83.0+1.20/fabric-api-0.83.0+1.20.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.2.2+b3afc78b27/fabric-transfer-api-v1-3.2.2+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.34+4d8536c927/fabric-api-lookup-api-v1-1.6.34+4d8536c927.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.39+b3afc78b27/fabric-blockrenderlayer-v1-1.1.39+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.0.20+b3afc78b27/fabric-client-tags-api-v1-1.0.20+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.11+b3afc78b27/fabric-command-api-v2-2.2.11+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.7+b3afc78b27/fabric-content-registries-v0-4.0.7+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.3+b3afc78b27/fabric-convention-tags-v1-1.5.3+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.1.10+b3afc78b27/fabric-data-generation-api-v1-12.1.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.51+b3afc78b27/fabric-dimensions-v1-2.1.51+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.5.21+b3afc78b27/fabric-entity-events-v1-1.5.21+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.0+b3afc78b27/fabric-events-interaction-v0-0.6.0+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.10+b3afc78b27/fabric-gametest-api-v1-1.2.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.26+b3afc78b27/fabric-item-api-v1-2.1.26+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.7+b3afc78b27/fabric-item-group-api-v1-4.0.7+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.47+b3afc78b27/fabric-mining-level-api-v1-2.1.47+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.20+b3afc78b27/fabric-lifecycle-events-v1-2.2.20+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.1.37+b3afc78b27/fabric-loot-api-v2-1.1.37+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.6+b3afc78b27/fabric-message-api-v1-5.1.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-models-v0/0.3.35+b3afc78b27/fabric-models-v0-0.3.35+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.18+b3afc78b27/fabric-recipe-api-v1-1.0.18+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.2.6+b3afc78b27/fabric-registry-sync-v0-2.2.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.27+b3afc78b27/fabric-screen-handler-api-v1-1.3.27+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.8+b3afc78b27/fabric-networking-api-v1-1.3.8+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.0.6+b3afc78b27/fabric-object-builder-api-v1-11.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.0.28+b3afc78b27/fabric-particles-v1-1.0.28+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.3.1+b3afc78b27/fabric-renderer-indigo-1.3.1+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.0.1+b3afc78b27/fabric-renderer-api-v1-3.0.1+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.33+b3afc78b27/fabric-rendering-data-attachment-v1-0.3.33+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.26+b3afc78b27/fabric-rendering-fluids-v1-3.0.26+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.6+b3afc78b27/fabric-rendering-v1-3.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.6+b3afc78b27/fabric-screen-api-v1-2.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.29+b04edc7a27/fabric-api-base-0.4.29+b04edc7a27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.10+b3afc78b27/fabric-biome-api-v1-13.0.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.9+e022e5d127/fabric-block-api-v1-1.0.9+e022e5d127.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.18+aeb40ebe27/fabric-crash-report-info-v1-0.2.18+aeb40ebe27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.38+b04edc7a27/fabric-game-rule-api-v1-1.0.38+b04edc7a27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.36+fb8d95da27/fabric-key-binding-api-v1-1.0.36+fb8d95da27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.4+b3afc78b27/fabric-resource-conditions-api-v1-2.3.4+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.7+f7923f6d27/fabric-resource-loader-v0-0.11.7+f7923f6d27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.12+b3afc78b27/fabric-sound-api-v1-1.0.12+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.2.0+b3afc78b27/fabric-transitive-access-wideners-v1-4.2.0+b3afc78b27.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.12.1/4382ab1382c7b6f379377ed5f665dc2f6e1218bc/jline-reader-3.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.12.1/c777448314e050d980a6b697c140f3bfe9eb7416/jline-terminal-3.12.1.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:307) ~[jna-5.12.1.jar:5.12.1 (b0)]
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:467) ~[jna-5.12.1.jar:5.12.1 (b0)]
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:409) ~[jna-5.12.1.jar:5.12.1 (b0)]
+	at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+	... 9 more
+	Suppressed: java.lang.UnsatisfiedLinkError: libflite.so: cannot open shared object file: No such file or directory
+		at com.sun.jna.Native.open(Native Method) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:197) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:467) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:409) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.client.util.NarratorManager.<init>(NarratorManager.java:19) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:640) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+	Suppressed: java.lang.UnsatisfiedLinkError: libflite.so: cannot open shared object file: No such file or directory
+		at com.sun.jna.Native.open(Native Method) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:210) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:467) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:409) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.client.util.NarratorManager.<init>(NarratorManager.java:19) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:640) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+	Suppressed: java.io.IOException: Native library (linux-x86-64/libflite.so) not found in resource path (/home/dsinkerii/projects/OhNo/build/classes/java/main:/home/dsinkerii/projects/OhNo/build/resources/main:/home/dsinkerii/.gradle/caches/fabric-loom/1.20/net.fabricmc.yarn.1_20.1.20+build.1-v2/mappings.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-mappings-parser/0.3.0+build.17/2f10540a290e382a7cd35c16ec3900046a4e252/tiny-mappings-parser-0.3.0+build.17.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-remapper/0.8.2/2cc6565989469ec38893bfb7802b31c0d0d11ea0/tiny-remapper-0.8.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/access-widener/2.1.0/f62a27adbfd8ab4d4fa5681793039f2c0b177155/access-widener-2.1.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.5/dc6ea1875f4d64fbc85e1691c95b96a3d8569c90/asm-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.5/490bacc77de7cbc0be1a30bb3471072d705be4a4/asm-analysis-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.5/19ab5b5800a3910d30d3a3e64fdb00fd0cb42de0/asm-commons-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.5/fd33c8b6373abaa675be407082fdfda35021254a/asm-tree-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.5/64b5a1fc8c1b15ed2efd6a063e976bc8d3dc5ffe/asm-util-9.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.minecrell/terminalconsoleappender/1.2.0/96d02cd3b384ff015a8fef4223bcb4ccf1717c95/terminalconsoleappender-1.2.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.2.2/54f5efc19bca95d709d9a37d19ffcbba3d21c1a6/oshi-core-6.2.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/dd9b193aef96e973d5a11ab13cd17430c2e4306b/gson-2.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/71.1/9e7d3304c23f9ba5cb71915f7cce23231a57a445/icu4j-71.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/4.0.43/2ff9d747a77570a07a60d32ac77eb6162ad2a2d9/authlib-4.0.43.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/blocklist/1.0.10/5c685c5ffa94c4cd39496c7184c1d122e515ecef/blocklist-1.0.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.1.8/5244ce82c3337bba4a196a3ce858bfaecc74404a/brigadier-1.1.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/6.0.8/3ba4a30557a9b057760af4011f909ba619fc5125/datafixerupper-6.0.8.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/logging/1.1.1/832b8e6674a9b325a5175a3a6267dfaf34c85139/logging-1.1.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.2.10/da05971b07cbb379d002cf7eaec6a2048211fefc/patchy-2.2.10.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/3cad216e3a7f0c19b4b394388bc9ffc446f13b14/text2speech-1.17.9.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.15/49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d/commons-codec-1.15.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.82.Final/a544270cf1ae8b8077082f5036436a9a9971ea71/netty-buffer-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.82.Final/b77200379acb345a9ffdece1c605e591ac3e4e0a/netty-codec-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.82.Final/22d148e85c3f5ebdacc0ce1f5aabb1d420f73f3/netty-common-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.82.Final/644041d1fa96a5d3130a29e8978630d716d76e38/netty-handler-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.82.Final/38f665ae8dcd29032eea31245ba7806bed2e0fa8/netty-resolver-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.82.Final/e7c7dd18deac93105797f30057c912651ea76521/netty-transport-classes-epoll-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.82.Final/476409d6255001ca53a55f65b01c13822f8dc93a/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.82.Final/c7350a71920f3ae9142945e25fed4846cce53374/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.82.Final/3e895b35ca1b8a0eca56cacff4c2dde5d2c6abce/netty-transport-native-unix-common-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.82.Final/e431a218d91acb6476ccad5f5aafde50aa3945ca/netty-transport-4.1.82.Final.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.9/bb7ea75ecdb216654237830b3a96d87ad91f8cc5/fastutil-8.5.9.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.12.1/97406a297c852f4a41e688a176ec675f72e8329/jna-platform-5.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.12.1/b1e93a735caea94f503e95e6fe79bf9cdc1e985d/jna-5.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d/httpcore-4.4.15.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.19.0/3b6eeb4de4c49c0fe38a4ee27188ff5fee44d0bb/log4j-core-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.19.0/ea1b37f38c327596b216542bc636cfdc0b8036fa/log4j-api-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.19.0/5c04bfdd63ce9dceb2e284b81e96b6a70010ee10/log4j-slf4j2-impl-2.19.0.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/cbac1b8d30cb4795149c1ef540f912671a8616d0/lwjgl-glfw-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/81716978214ecbda15050ca394b06ef61501a49e/lwjgl-glfw-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/a817bcf213db49f710603677457567c37d53e103/lwjgl-jemalloc-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/33dbb017b6ed6b25f993ad9d56741a49e7937718/lwjgl-jemalloc-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/2623a6b8ae1dfcd880738656a9f0243d2e6840bd/lwjgl-openal-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/f906b6439f6daa66001182ea7727e3467a93681b/lwjgl-openal-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/831a5533a21a5f4f81bbc51bb13e9899319b5411/lwjgl-opengl-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/ab9ab6fde3743e3550fa5d46d785ecb45b047d99/lwjgl-opengl-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/b119297cf8ed01f247abe8685857f8e7fcf5980f/lwjgl-stb-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/3ee7aec8686e52867677110415566a5342a80230/lwjgl-stb-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/ff1914111ef2e3e0110ef2dabc8d8cdaad82347/lwjgl-tinyfd-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/a35110b9471bea8cde826ab297550ee8c22f5035/lwjgl-tinyfd-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/ae58664f88e18a9bb2c77b063833ca7aaec484cb/lwjgl-3.3.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/1de885aba434f934201b99f2f1afb142036ac189/lwjgl-3.3.1-natives-linux.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.1/f48d81adce2abf5ad3cfe463df517952749e03bc/slf4j-api-2.0.1.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2/minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/net.fabricmc/fabric-loader/0.14.22/9dd26439963a78e6ff7be3614c2151a50f9254a3/fabric-loader-0.14.22.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api/0.83.0+1.20/fabric-api-0.83.0+1.20.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.2.2+b3afc78b27/fabric-transfer-api-v1-3.2.2+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.34+4d8536c927/fabric-api-lookup-api-v1-1.6.34+4d8536c927.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.39+b3afc78b27/fabric-blockrenderlayer-v1-1.1.39+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.0.20+b3afc78b27/fabric-client-tags-api-v1-1.0.20+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.11+b3afc78b27/fabric-command-api-v2-2.2.11+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.7+b3afc78b27/fabric-content-registries-v0-4.0.7+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.3+b3afc78b27/fabric-convention-tags-v1-1.5.3+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.1.10+b3afc78b27/fabric-data-generation-api-v1-12.1.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.51+b3afc78b27/fabric-dimensions-v1-2.1.51+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.5.21+b3afc78b27/fabric-entity-events-v1-1.5.21+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.0+b3afc78b27/fabric-events-interaction-v0-0.6.0+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.10+b3afc78b27/fabric-gametest-api-v1-1.2.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.26+b3afc78b27/fabric-item-api-v1-2.1.26+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.7+b3afc78b27/fabric-item-group-api-v1-4.0.7+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.47+b3afc78b27/fabric-mining-level-api-v1-2.1.47+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.20+b3afc78b27/fabric-lifecycle-events-v1-2.2.20+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.1.37+b3afc78b27/fabric-loot-api-v2-1.1.37+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.6+b3afc78b27/fabric-message-api-v1-5.1.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-models-v0/0.3.35+b3afc78b27/fabric-models-v0-0.3.35+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.18+b3afc78b27/fabric-recipe-api-v1-1.0.18+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.2.6+b3afc78b27/fabric-registry-sync-v0-2.2.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.27+b3afc78b27/fabric-screen-handler-api-v1-1.3.27+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.8+b3afc78b27/fabric-networking-api-v1-1.3.8+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.0.6+b3afc78b27/fabric-object-builder-api-v1-11.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.0.28+b3afc78b27/fabric-particles-v1-1.0.28+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.3.1+b3afc78b27/fabric-renderer-indigo-1.3.1+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.0.1+b3afc78b27/fabric-renderer-api-v1-3.0.1+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.33+b3afc78b27/fabric-rendering-data-attachment-v1-0.3.33+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.26+b3afc78b27/fabric-rendering-fluids-v1-3.0.26+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.6+b3afc78b27/fabric-rendering-v1-3.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.6+b3afc78b27/fabric-screen-api-v1-2.0.6+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.29+b04edc7a27/fabric-api-base-0.4.29+b04edc7a27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.10+b3afc78b27/fabric-biome-api-v1-13.0.10+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.9+e022e5d127/fabric-block-api-v1-1.0.9+e022e5d127.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.18+aeb40ebe27/fabric-crash-report-info-v1-0.2.18+aeb40ebe27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.38+b04edc7a27/fabric-game-rule-api-v1-1.0.38+b04edc7a27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.36+fb8d95da27/fabric-key-binding-api-v1-1.0.36+fb8d95da27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.4+b3afc78b27/fabric-resource-conditions-api-v1-2.3.4+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.7+f7923f6d27/fabric-resource-loader-v0-0.11.7+f7923f6d27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.12+b3afc78b27/fabric-sound-api-v1-1.0.12+b3afc78b27.jar:/home/dsinkerii/projects/OhNo/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_20_build_1_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.2.0+b3afc78b27/fabric-transitive-access-wideners-v1-4.2.0+b3afc78b27.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.12.1/4382ab1382c7b6f379377ed5f665dc2f6e1218bc/jline-reader-3.12.1.jar:/home/dsinkerii/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.12.1/c777448314e050d980a6b697c140f3bfe9eb7416/jline-terminal-3.12.1.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:281) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:467) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:409) ~[jna-5.12.1.jar:5.12.1 (b0)]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.client.util.NarratorManager.<init>(NarratorManager.java:19) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:640) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[minecraft-merged-project-root-1.20-net.fabricmc.yarn.1_20.1.20+build.1-v2.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:468) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.14.22.jar:?]
+		at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar:?]
+[14:16:37] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-gametest-api-v1, fabric-api-base, fabric-recipe-api-v1, fabric-biome-api-v1, fabric-message-api-v1, fabric-screen-handler-api-v1, fabric-models-v0, fabric-rendering-v1, fabric-item-group-api-v1, fabric-blockrenderlayer-v1, fabric-resource-conditions-api-v1, fabric-game-rule-api-v1, fabric-rendering-data-attachment-v1, fabric-networking-api-v1, fabric-entity-events-v1, fabric-registry-sync-v0, fabric-transfer-api-v1, fabric-convention-tags-v1, fabric-sound-api-v1, fabric-events-interaction-v0, dsinkerii_ohno, fabric-key-binding-api-v1, fabric-data-generation-api-v1, fabric-lifecycle-events-v1, fabric-renderer-indigo, fabric-object-builder-api-v1, fabric-api, fabric-item-api-v1, fabric-mining-level-api-v1, fabric-loot-api-v2, fabricloader, fabric-command-api-v2, fabric-dimensions-v1, fabric-renderer-api-v1, fabric-particles-v1, fabric-screen-api-v1, fabric-api-lookup-api-v1, fabric-resource-loader-v0, fabric-client-tags-api-v1, fabric-rendering-fluids-v1, fabric-crash-report-info-v1, fabric-content-registries-v0, fabric-block-api-v1, fabric-transitive-access-wideners-v1), high_contrast ()
+[14:16:37] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[14:16:38] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[14:16:39] [Worker-Main-4/WARN] (Minecraft) Exception loading blockstate definition: 'css:blockstates/css_block.json' missing model for variant: 'css:css_block#'
+[14:16:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[14:16:39] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14:16:39] [Render thread/INFO] (Minecraft) OpenAL initialized on device ALSA Default
+[14:16:39] [Render thread/INFO] (Minecraft) Sound engine started
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/signs.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/chest.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 128x128x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/beds.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:16:40] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:16:40] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:18:27] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[14:18:27] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[14:18:27] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.228 ms
+[14:18:27] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20
+[14:18:27] [Server thread/INFO] (Minecraft) Generating keypair
+[14:18:28] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[14:18:30] [Render thread/INFO] (Minecraft) Quit Game
+[14:18:30] [Render thread/INFO] (Minecraft) Quit Game
+[14:18:30] [Render thread/INFO] (Minecraft) Quit Game
+[14:18:30] [Render thread/INFO] (Minecraft) Quit Game
+[14:18:30] [Render thread/INFO] (Minecraft) Quit Game
+[14:18:30] [Render thread/INFO] (Minecraft) Time elapsed: 2467 ms
+[14:18:30] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[14:18:30] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[14:18:31] [Server thread/INFO] (Minecraft) Player366[local:E:66b45df5] logged in with entity id 129 at (40.156452074400555, -60.0, 0.16305642930695133)
+[14:18:31] [Server thread/INFO] (Minecraft) %s (formerly known as %s) joined the game
+[14:18:31] [Render thread/INFO] (Minecraft) Loaded 28 advancements
+[14:18:34] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:18:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:18:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:18:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:18:52] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:18:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:18:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:18:52] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:19:02] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:28.081205871448237, y:-59.2468000194788, z:29.642849217549827
+[14:19:03] [Render thread/INFO] (Minecraft) Loaded 37 advancements
+[14:19:12] [Server thread/INFO] (Minecraft) Player366 has completed the challenge Gamerule %s is currently set to: %s
+[14:19:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Gamerule %s is currently set to: %s
+[14:19:21] [Server thread/INFO] (Minecraft) Player366 has completed the challenge Gamerule %s is currently set to: %s
+[14:19:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Gamerule %s is currently set to: %s
+[14:19:21] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:19:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:19:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:19:21] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:19:22] [Server thread/INFO] (Minecraft) Player366 lost connection: You have been idle for too long!
+[14:19:22] [Server thread/INFO] (Minecraft) Online players: Player366
+[14:19:22] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[14:19:22] [Server thread/INFO] (Minecraft) Stopping server
+[14:19:22] [Server thread/INFO] (Minecraft) Saving players
+[14:19:22] [Server thread/INFO] (Minecraft) Saving worlds
+[14:19:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:19:23] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:19:23] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:19:23] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Re-Create (1)): All chunks are saved
+[14:19:23] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:19:23] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:19:23] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:19:31] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[14:19:31] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[14:19:39] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 192.7 μs
+[14:19:39] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20
+[14:19:39] [Server thread/INFO] (Minecraft) Generating keypair
+[14:19:42] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[14:19:42] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:42] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:43] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:43] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:44] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:44] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:45] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:45] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:46] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:46] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:47] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:47] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:48] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:48] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:49] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:49] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:50] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:50] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:51] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:51] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:52] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:52] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:53] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:53] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:54] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:54] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:55] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:55] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:56] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:56] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:57] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:57] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:58] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:58] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:59] [Render thread/INFO] (Minecraft) Quit Game
+[14:19:59] [Render thread/INFO] (Minecraft) Time elapsed: 17293 ms
+[14:19:59] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[14:19:59] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[14:19:59] [Server thread/INFO] (Minecraft) Player366[local:E:6f7afe5d] logged in with entity id 610 at (-9.5, 67.0, 3.5)
+[14:19:59] [Server thread/INFO] (Minecraft) %s (formerly known as %s) joined the game
+[14:20:00] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[14:20:00] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:20:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:20:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:20:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:20:31] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:20:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:20:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:20:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:20:31] [Server thread/INFO] (Minecraft) Player366 lost connection: You have been idle for too long!
+[14:20:31] [Server thread/INFO] (Minecraft) Online players: Player366
+[14:20:31] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[14:20:31] [Server thread/INFO] (Minecraft) Stopping server
+[14:20:31] [Server thread/INFO] (Minecraft) Saving players
+[14:20:31] [Server thread/INFO] (Minecraft) Saving worlds
+[14:20:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:20:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:20:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:20:32] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Re-Create (2)): All chunks are saved
+[14:20:32] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:20:32] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:20:32] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:23:35] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[14:23:35] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[14:23:35] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 118.7 μs
+[14:23:35] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20
+[14:23:35] [Server thread/INFO] (Minecraft) Generating keypair
+[14:23:37] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[14:23:37] [Render thread/INFO] (Minecraft) Quit Game
+[14:23:37] [Render thread/INFO] (Minecraft) Quit Game
+[14:23:38] [Render thread/INFO] (Minecraft) Quit Game
+[14:23:38] [Render thread/INFO] (Minecraft) Quit Game
+[14:23:38] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[14:23:38] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[14:23:38] [Render thread/INFO] (Minecraft) Time elapsed: 1733 ms
+[14:23:39] [Server thread/INFO] (Minecraft) Player366[local:E:b5253ab2] logged in with entity id 1819 at (-10.540859703043028, 71.17675927506424, 33.77374942586683)
+[14:23:39] [Server thread/INFO] (Minecraft) %s (formerly known as %s) joined the game
+[14:23:39] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[14:23:45] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game....... or else
+[14:24:02] [Server thread/WARN] (Minecraft) Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=17, y=84, z=96}
+[14:24:33] [Thread-340/INFO] (Minecraft) [System] [CHAT] §ePlayer14 has joined the game
+[14:24:33] [Thread-342/INFO] (Minecraft) [System] [CHAT] §ePlayer78 has joined the game
+[14:24:33] [Thread-346/INFO] (Minecraft) [System] [CHAT] §ePlayer108 has joined the game
+[14:24:33] [Thread-336/INFO] (Minecraft) [System] [CHAT] §ePlayer229 has joined the game
+[14:24:33] [Thread-330/INFO] (Minecraft) [System] [CHAT] §ePlayer30 has joined the game
+[14:24:33] [Thread-337/INFO] (Minecraft) [System] [CHAT] §ePlayer160 has joined the game
+[14:24:33] [Thread-344/INFO] (Minecraft) [System] [CHAT] §ePlayer96 has joined the game
+[14:24:33] [Thread-350/INFO] (Minecraft) [System] [CHAT] §ePlayer167 has joined the game
+[14:24:33] [Thread-349/INFO] (Minecraft) [System] [CHAT] §ePlayer2 has joined the game
+[14:24:33] [Render thread/INFO] (Minecraft) Loaded 5 advancements
+[14:24:33] [Thread-347/INFO] (Minecraft) [System] [CHAT] §ePlayer14 has joined the game
+[14:24:33] [Thread-343/INFO] (Minecraft) [System] [CHAT] §ePlayer9 has joined the game
+[14:24:33] [Thread-334/INFO] (Minecraft) [System] [CHAT] §ePlayer18 has joined the game
+[14:24:33] [Thread-348/INFO] (Minecraft) [System] [CHAT] §ePlayer63 has joined the game
+[14:24:33] [Thread-338/INFO] (Minecraft) [System] [CHAT] §ePlayer218 has joined the game
+[14:24:34] [Thread-331/INFO] (Minecraft) [System] [CHAT] §ePlayer185 has joined the game
+[14:24:34] [Thread-332/INFO] (Minecraft) [System] [CHAT] §ePlayer144 has joined the game
+[14:24:34] [Thread-345/INFO] (Minecraft) [System] [CHAT] §ePlayer127 has joined the game
+[14:24:34] [Thread-341/INFO] (Minecraft) [System] [CHAT] §ePlayer121 has joined the game
+[14:24:34] [Thread-339/INFO] (Minecraft) [System] [CHAT] §ePlayer4 has joined the game
+[14:24:34] [Thread-333/INFO] (Minecraft) [System] [CHAT] §ePlayer154 has joined the game
+[14:24:34] [Thread-335/INFO] (Minecraft) [System] [CHAT] §ePlayer115 has joined the game
+[14:24:37] [Thread-342/INFO] (Minecraft) [System] [CHAT] <Player78> fuck
+[14:24:37] [Thread-346/INFO] (Minecraft) [System] [CHAT] <Player108> sorr ywrong ip
+[14:24:37] [Thread-340/INFO] (Minecraft) [System] [CHAT] <Player14> sorr ywrong ip
+[14:24:37] [Thread-337/INFO] (Minecraft) [System] [CHAT] <Player160> sorr ywrong ip
+[14:24:37] [Thread-344/INFO] (Minecraft) [System] [CHAT] <Player96> sorr ywrong ip
+[14:24:37] [Thread-347/INFO] (Minecraft) [System] [CHAT] <Player14> fuck
+[14:24:37] [Thread-330/INFO] (Minecraft) [System] [CHAT] <Player30> hello yahi
+[14:24:37] [Thread-331/INFO] (Minecraft) [System] [CHAT] <Player185> fuck
+[14:24:37] [Thread-350/INFO] (Minecraft) [System] [CHAT] <Player167> sorr ywrong ip
+[14:24:37] [Thread-338/INFO] (Minecraft) [System] [CHAT] <Player218> hello yahi
+[14:24:37] [Thread-343/INFO] (Minecraft) [System] [CHAT] <Player9> ok
+[14:24:37] [Thread-349/INFO] (Minecraft) [System] [CHAT] <Player2> hello yahi
+[14:24:37] [Thread-336/INFO] (Minecraft) [System] [CHAT] <Player229> ok
+[14:24:37] [Thread-335/INFO] (Minecraft) [System] [CHAT] <Player115> hello yahi
+[14:24:37] [Thread-348/INFO] (Minecraft) [System] [CHAT] <Player63> ok
+[14:24:37] [Thread-345/INFO] (Minecraft) [System] [CHAT] <Player127> sorr ywrong ip
+[14:24:37] [Thread-334/INFO] (Minecraft) [System] [CHAT] <Player18> fuck
+[14:24:37] [Thread-339/INFO] (Minecraft) [System] [CHAT] <Player4> ok
+[14:24:37] [Thread-332/INFO] (Minecraft) [System] [CHAT] <Player144> sorr ywrong ip
+[14:24:37] [Thread-333/INFO] (Minecraft) [System] [CHAT] <Player154> hello yahi
+[14:24:37] [Thread-341/INFO] (Minecraft) [System] [CHAT] <Player121> ok
+[14:24:39] [Thread-342/INFO] (Minecraft) [System] [CHAT] §ePlayer78 has left the game
+[14:24:39] [Thread-344/INFO] (Minecraft) [System] [CHAT] §ePlayer96 has left the game
+[14:24:39] [Thread-340/INFO] (Minecraft) [System] [CHAT] §ePlayer14 has left the game
+[14:24:39] [Thread-337/INFO] (Minecraft) [System] [CHAT] §ePlayer160 has left the game
+[14:24:39] [Thread-350/INFO] (Minecraft) [System] [CHAT] §ePlayer167 has left the game
+[14:24:39] [Thread-347/INFO] (Minecraft) [System] [CHAT] §ePlayer14 has left the game
+[14:24:39] [Thread-346/INFO] (Minecraft) [System] [CHAT] §ePlayer108 has left the game
+[14:24:39] [Thread-338/INFO] (Minecraft) [System] [CHAT] §ePlayer218 has left the game
+[14:24:39] [Thread-339/INFO] (Minecraft) [System] [CHAT] §ePlayer4 has left the game
+[14:24:39] [Thread-332/INFO] (Minecraft) [System] [CHAT] §ePlayer144 has left the game
+[14:24:39] [Thread-331/INFO] (Minecraft) [System] [CHAT] §ePlayer185 has left the game
+[14:24:39] [Thread-330/INFO] (Minecraft) [System] [CHAT] §ePlayer30 has left the game
+[14:24:39] [Thread-341/INFO] (Minecraft) [System] [CHAT] §ePlayer121 has left the game
+[14:24:39] [Thread-335/INFO] (Minecraft) [System] [CHAT] §ePlayer115 has left the game
+[14:24:39] [Thread-343/INFO] (Minecraft) [System] [CHAT] §ePlayer9 has left the game
+[14:24:39] [Thread-348/INFO] (Minecraft) [System] [CHAT] §ePlayer63 has left the game
+[14:24:39] [Thread-349/INFO] (Minecraft) [System] [CHAT] §ePlayer2 has left the game
+[14:24:40] [Thread-345/INFO] (Minecraft) [System] [CHAT] §ePlayer127 has left the game
+[14:24:40] [Thread-336/INFO] (Minecraft) [System] [CHAT] §ePlayer229 has left the game
+[14:24:40] [Thread-334/INFO] (Minecraft) [System] [CHAT] §ePlayer18 has left the game
+[14:24:40] [Thread-333/INFO] (Minecraft) [System] [CHAT] §ePlayer154 has left the game
+[14:25:24] [Render thread/INFO] (Minecraft) Loaded 6 advancements
+[14:25:32] [Server thread/WARN] (Minecraft) Mismatch in destroy block pos: BlockPos{x=-52, y=110, z=75} BlockPos{x=-49, y=110, z=77}
+[14:25:32] [Server thread/WARN] (Minecraft) Mismatch in destroy block pos: BlockPos{x=-52, y=110, z=75} BlockPos{x=-49, y=110, z=77}
+[14:25:46] [Render thread/INFO] (Minecraft) Loaded 17 advancements
+[14:25:47] [Render thread/INFO] (Minecraft) Loaded 20 advancements
+[14:25:50] [Render thread/INFO] (Minecraft) Loaded 27 advancements
+[14:25:59] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:25:59] [Server thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[14:25:59] [Server thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14:25:59] [Render thread/INFO] (Minecraft) Audio device was lost!
+[14:25:59] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[14:25:59] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14:25:59] [Server thread/INFO] (Minecraft) OpenAL initialized on device ALSA Default
+[14:25:59] [Server thread/INFO] (Minecraft) Sound engine started
+[14:26:01] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:12.483928530768866, y:70.0, z:41.30000001192093
+[14:26:08] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:26:13] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:11.099409271586605, y:67.0, z:47.868317728958395
+[14:26:19] [Server thread/INFO] (Minecraft) [Player366] Message modified by the server. Original:
+[14:26:19] [Render thread/INFO] (Minecraft) [System] [CHAT] [Player366] Message modified by the server. Original:
+[14:26:19] [Render thread/INFO] (Minecraft) Loaded 42 advancements
+[14:26:29] [Thread-354/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:26:30] [Server thread/INFO] (Minecraft) [Player366] Message modified by the server. Original:
+[14:26:30] [Render thread/INFO] (Minecraft) [System] [CHAT] [Player366] Message modified by the server. Original:
+[14:26:30] [Render thread/INFO] (Minecraft) Loaded 46 advancements
+[14:26:38] [Thread-356/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:26:44] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:26:53] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:11.205919075156295, y:71.17675927506424, z:52.129342580323154
+[14:26:59] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:35.45253999565373, y:67.0, z:67.062004546064
+[14:26:59] [Render thread/INFO] (Minecraft) Loaded 47 advancements
+[14:27:25] [Render thread/INFO] (Minecraft) Loaded 50 advancements
+[14:27:29] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:109.24903020283523, y:50.53584062504456, z:88.91400872571016
+[14:27:31] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:27:37] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:112.27508432614657, y:50.0, z:91.84122852640112
+[14:27:41] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:27:53] [Render thread/INFO] (Minecraft) Loaded 59 advancements
+[14:28:01] [Thread-362/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:28:13] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:144.82692883676185, y:11.0, z:105.75981493259579
+[14:28:24] [Render thread/INFO] (Minecraft) Loaded 70 advancements
+[14:28:40] [Render thread/INFO] (Minecraft) Loaded 92 advancements
+[14:29:01] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:152.69999998807907, y:-2.0, z:104.29667782796545
+[14:29:01] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:29:31] [Thread-366/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:29:42] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:29:48] [Render thread/INFO] (Minecraft) Loaded 93 advancements
+[14:30:21] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:165.82488627507863, y:-11.0, z:108.69999998807907
+[14:30:38] [Server thread/INFO] (Minecraft) [Player366] Message modified by the server. Original:
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] [Player366] Message modified by the server. Original:
+[14:30:38] [Render thread/INFO] (Minecraft) Loaded 120 advancements
+[14:30:40] [Server thread/INFO] (Minecraft) [Player366] Message modified by the server. Original:
+[14:30:40] [Render thread/INFO] (Minecraft) [System] [CHAT] [Player366] Message modified by the server. Original:
+[14:30:40] [Render thread/INFO] (Minecraft) Loaded 124 advancements
+[14:30:42] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:165.44860915178631, y:-11.0, z:108.69999998807907
+[14:31:20] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): stop playing the demo and buy the full game ffs
+[14:31:26] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:137.65690087899424, y:-11.747796659746275, z:109.98760577366652
+[14:31:35] [Render thread/INFO] (Minecraft) Loaded 127 advancements
+[14:31:46] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:128.30000001192093, y:-16.0, z:101.30000001192093
+[14:31:55] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:138.07875703725085, y:-12.580000013113022, z:111.35107225205506
+[14:31:56] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:143.23705890143427, y:-12.833890739061784, z:108.02060673948912
+[14:32:13] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:32:27] [Server thread/INFO] (Minecraft) %1$s tried to swim in lava to escape %2$s
+[14:32:27] [Render thread/INFO] (Minecraft) [System] [CHAT] %1$s tried to swim in lava to escape %2$s
+[14:33:44] [Server thread/INFO] (Minecraft) %1$s was shot by %2$s using %3$s
+[14:33:44] [Render thread/INFO] (Minecraft) [System] [CHAT] %1$s was shot by %2$s using %3$s
+[14:33:57] [Render thread/INFO] (Minecraft) Loaded 155 advancements
+[14:33:58] [Render thread/INFO] (Minecraft) Loaded 158 advancements
+[14:33:58] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:34:16] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:34:28] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-142.97231462164825, y:69.00133597911214, z:-22.626006197635057
+[14:34:39] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-183.92211135642057, y:71.24918707874468, z:24.39816034076857
+[14:34:41] [Thread-1601/INFO] (Minecraft) [System] [CHAT] §ePlayer223 has joined the game
+[14:34:41] [Thread-1593/INFO] (Minecraft) [System] [CHAT] §ePlayer200 has joined the game
+[14:34:41] [Thread-1589/INFO] (Minecraft) [System] [CHAT] §ePlayer152 has joined the game
+[14:34:41] [Thread-1599/INFO] (Minecraft) [System] [CHAT] §ePlayer174 has joined the game
+[14:34:41] [Thread-1606/INFO] (Minecraft) [System] [CHAT] §ePlayer252 has joined the game
+[14:34:41] [Thread-1591/INFO] (Minecraft) [System] [CHAT] §ePlayer118 has joined the game
+[14:34:41] [Thread-1604/INFO] (Minecraft) [System] [CHAT] §ePlayer193 has joined the game
+[14:34:41] [Thread-1607/INFO] (Minecraft) [System] [CHAT] §ePlayer95 has joined the game
+[14:34:41] [Thread-1600/INFO] (Minecraft) [System] [CHAT] §ePlayer130 has joined the game
+[14:34:41] [Thread-1596/INFO] (Minecraft) [System] [CHAT] §ePlayer82 has joined the game
+[14:34:41] [Thread-1592/INFO] (Minecraft) [System] [CHAT] §ePlayer162 has joined the game
+[14:34:41] [Thread-1594/INFO] (Minecraft) [System] [CHAT] §ePlayer19 has joined the game
+[14:34:41] [Thread-1598/INFO] (Minecraft) [System] [CHAT] §ePlayer168 has joined the game
+[14:34:41] [Thread-1597/INFO] (Minecraft) [System] [CHAT] §ePlayer29 has joined the game
+[14:34:41] [Thread-1605/INFO] (Minecraft) [System] [CHAT] §ePlayer121 has joined the game
+[14:34:41] [Thread-1595/INFO] (Minecraft) [System] [CHAT] §ePlayer61 has joined the game
+[14:34:41] [Thread-1608/INFO] (Minecraft) [System] [CHAT] §ePlayer132 has joined the game
+[14:34:41] [Thread-1590/INFO] (Minecraft) [System] [CHAT] §ePlayer153 has joined the game
+[14:34:41] [Thread-1602/INFO] (Minecraft) [System] [CHAT] §ePlayer134 has joined the game
+[14:34:41] [Thread-1603/INFO] (Minecraft) [System] [CHAT] §ePlayer58 has joined the game
+[14:34:41] [Thread-1609/INFO] (Minecraft) [System] [CHAT] §ePlayer6 has joined the game
+[14:34:44] [Thread-1593/INFO] (Minecraft) [System] [CHAT] <Player200> sorr ywrong ip
+[14:34:44] [Thread-1601/INFO] (Minecraft) [System] [CHAT] <Player223> fuck
+[14:34:44] [Thread-1607/INFO] (Minecraft) [System] [CHAT] <Player95> sorr ywrong ip
+[14:34:44] [Thread-1589/INFO] (Minecraft) [System] [CHAT] <Player152> sorr ywrong ip
+[14:34:44] [Thread-1597/INFO] (Minecraft) [System] [CHAT] <Player29> hello yahi
+[14:34:45] [Thread-1594/INFO] (Minecraft) [System] [CHAT] <Player19> fuck
+[14:34:45] [Thread-1599/INFO] (Minecraft) [System] [CHAT] <Player174> ok
+[14:34:45] [Thread-1600/INFO] (Minecraft) [System] [CHAT] <Player130> ok
+[14:34:45] [Thread-1591/INFO] (Minecraft) [System] [CHAT] <Player118> sorr ywrong ip
+[14:34:45] [Thread-1605/INFO] (Minecraft) [System] [CHAT] <Player121> sorr ywrong ip
+[14:34:45] [Thread-1590/INFO] (Minecraft) [System] [CHAT] <Player153> fuck
+[14:34:45] [Thread-1604/INFO] (Minecraft) [System] [CHAT] <Player193> hello yahi
+[14:34:45] [Thread-1608/INFO] (Minecraft) [System] [CHAT] <Player132> fuck
+[14:34:45] [Thread-1606/INFO] (Minecraft) [System] [CHAT] <Player252> fuck
+[14:34:45] [Thread-1596/INFO] (Minecraft) [System] [CHAT] <Player82> sorr ywrong ip
+[14:34:45] [Thread-1592/INFO] (Minecraft) [System] [CHAT] <Player162> ok
+[14:34:45] [Thread-1598/INFO] (Minecraft) [System] [CHAT] <Player168> fuck
+[14:34:45] [Thread-1595/INFO] (Minecraft) [System] [CHAT] <Player61> hello yahi
+[14:34:45] [Thread-1603/INFO] (Minecraft) [System] [CHAT] <Player58> ok
+[14:34:45] [Thread-1609/INFO] (Minecraft) [System] [CHAT] <Player6> sorr ywrong ip
+[14:34:45] [Thread-1602/INFO] (Minecraft) [System] [CHAT] <Player134> hello yahi
+[14:34:46] [Thread-1607/INFO] (Minecraft) [System] [CHAT] §ePlayer95 has left the game
+[14:34:46] [Thread-1593/INFO] (Minecraft) [System] [CHAT] §ePlayer200 has left the game
+[14:34:47] [Thread-1591/INFO] (Minecraft) [System] [CHAT] §ePlayer118 has left the game
+[14:34:47] [Thread-1600/INFO] (Minecraft) [System] [CHAT] §ePlayer130 has left the game
+[14:34:47] [Thread-1601/INFO] (Minecraft) [System] [CHAT] §ePlayer223 has left the game
+[14:34:47] [Thread-1604/INFO] (Minecraft) [System] [CHAT] §ePlayer193 has left the game
+[14:34:47] [Thread-1596/INFO] (Minecraft) [System] [CHAT] §ePlayer82 has left the game
+[14:34:47] [Thread-1597/INFO] (Minecraft) [System] [CHAT] §ePlayer29 has left the game
+[14:34:47] [Thread-1598/INFO] (Minecraft) [System] [CHAT] §ePlayer168 has left the game
+[14:34:47] [Thread-1599/INFO] (Minecraft) [System] [CHAT] §ePlayer174 has left the game
+[14:34:47] [Thread-1589/INFO] (Minecraft) [System] [CHAT] §ePlayer152 has left the game
+[14:34:47] [Thread-1594/INFO] (Minecraft) [System] [CHAT] §ePlayer19 has left the game
+[14:34:47] [Thread-1606/INFO] (Minecraft) [System] [CHAT] §ePlayer252 has left the game
+[14:34:47] [Thread-1608/INFO] (Minecraft) [System] [CHAT] §ePlayer132 has left the game
+[14:34:47] [Thread-1592/INFO] (Minecraft) [System] [CHAT] §ePlayer162 has left the game
+[14:34:47] [Thread-1590/INFO] (Minecraft) [System] [CHAT] §ePlayer153 has left the game
+[14:34:47] [Thread-1605/INFO] (Minecraft) [System] [CHAT] §ePlayer121 has left the game
+[14:34:47] [Thread-1603/INFO] (Minecraft) [System] [CHAT] §ePlayer58 has left the game
+[14:34:47] [Thread-1602/INFO] (Minecraft) [System] [CHAT] §ePlayer134 has left the game
+[14:34:47] [Thread-1595/INFO] (Minecraft) [System] [CHAT] §ePlayer61 has left the game
+[14:34:47] [Thread-1609/INFO] (Minecraft) [System] [CHAT] §ePlayer6 has left the game
+[14:35:39] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:35:42] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[14:36:00] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-451.41613924847434, y:62.772456202335526, z:24.03831442593191
+[14:36:26] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): buy the game already, you are playing demo
+[14:36:49] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game to continue playing
+[14:37:06] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-483.4208267840075, y:62.60802275011483, z:239.4052400997226
+[14:37:32] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): stop playing the demo and buy the full game ffs
+[14:37:34] [Thread-1921/INFO] (Minecraft) [System] [CHAT] §ePlayer126 has joined the game
+[14:37:34] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-471.3768721433715, y:74.0, z:260.4868814340878
+[14:37:37] [Thread-1921/INFO] (Minecraft) [System] [CHAT] <Player126> sorr ywrong ip
+[14:37:40] [Thread-1921/INFO] (Minecraft) [System] [CHAT] §ePlayer126 has left the game
+[14:38:08] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): please buy our game we have 12 dollars in our budg et
+[14:38:12] [Thread-1990/INFO] (Minecraft) [System] [CHAT] §ePlayer20 has joined the game
+[14:38:16] [Thread-1990/INFO] (Minecraft) [System] [CHAT] <Player20> hello yahi
+[14:38:18] [Thread-1990/INFO] (Minecraft) [System] [CHAT] §ePlayer20 has left the game
+[14:38:19] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:38:23] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-430.65427934837396, y:108.25220334025373, z:332.9063590402335
+[14:38:28] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-435.6730745416776, y:111.0, z:357.4520079379148
+[14:38:28] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): stop playing the demo and buy the full game ffs
+[14:38:33] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:38:35] [Server thread/INFO] (Minecraft) %1$s tried to swim in lava to escape %2$s
+[14:38:35] [Render thread/INFO] (Minecraft) [System] [CHAT] %1$s tried to swim in lava to escape %2$s
+[14:39:03] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:39:10] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-123.44085048056769, y:71.49520087700593, z:-109.55745690389475
+[14:39:28] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:39:50] [Thread-2230/INFO] (Minecraft) [System] [CHAT] §ePlayer237 has joined the game
+[14:39:54] [Thread-2230/INFO] (Minecraft) [System] [CHAT] <Player237> fuck
+[14:39:56] [Thread-2230/INFO] (Minecraft) [System] [CHAT] §ePlayer237 has left the game
+[14:39:58] [Thread-2229/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:40:19] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-295.4861123551887, y:127.7531999805212, z:-219.20192953936044
+[14:40:19] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-296.49606106461596, y:128.25220334025371, z:-219.93606783510097
+[14:40:28] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-335.7127248743401, y:118.0, z:-226.01433673334054
+[14:40:52] [Thread-2243/INFO] (Minecraft) [System] [CHAT] §ePlayer91 has joined the game
+[14:40:52] [Thread-2249/INFO] (Minecraft) [System] [CHAT] §ePlayer110 has joined the game
+[14:40:52] [Thread-2250/INFO] (Minecraft) [System] [CHAT] §ePlayer135 has joined the game
+[14:40:52] [Thread-2244/INFO] (Minecraft) [System] [CHAT] §ePlayer154 has joined the game
+[14:40:52] [Thread-2238/INFO] (Minecraft) [System] [CHAT] §ePlayer24 has joined the game
+[14:40:52] [Thread-2252/INFO] (Minecraft) [System] [CHAT] §ePlayer145 has joined the game
+[14:40:52] [Thread-2237/INFO] (Minecraft) [System] [CHAT] §ePlayer219 has joined the game
+[14:40:52] [Thread-2239/INFO] (Minecraft) [System] [CHAT] §ePlayer188 has joined the game
+[14:40:52] [Thread-2236/INFO] (Minecraft) [System] [CHAT] §ePlayer206 has joined the game
+[14:40:52] [Thread-2242/INFO] (Minecraft) [System] [CHAT] §ePlayer83 has joined the game
+[14:40:52] [Thread-2247/INFO] (Minecraft) [System] [CHAT] §ePlayer93 has joined the game
+[14:40:52] [Thread-2235/INFO] (Minecraft) [System] [CHAT] §ePlayer25 has joined the game
+[14:40:52] [Thread-2240/INFO] (Minecraft) [System] [CHAT] §ePlayer3 has joined the game
+[14:40:52] [Thread-2241/INFO] (Minecraft) [System] [CHAT] §ePlayer19 has joined the game
+[14:40:52] [Thread-2254/INFO] (Minecraft) [System] [CHAT] §ePlayer247 has joined the game
+[14:40:52] [Thread-2246/INFO] (Minecraft) [System] [CHAT] §ePlayer224 has joined the game
+[14:40:52] [Thread-2255/INFO] (Minecraft) [System] [CHAT] §ePlayer179 has joined the game
+[14:40:52] [Thread-2248/INFO] (Minecraft) [System] [CHAT] §ePlayer132 has joined the game
+[14:40:52] [Thread-2253/INFO] (Minecraft) [System] [CHAT] §ePlayer113 has joined the game
+[14:40:52] [Thread-2251/INFO] (Minecraft) [System] [CHAT] §ePlayer34 has joined the game
+[14:40:52] [Thread-2245/INFO] (Minecraft) [System] [CHAT] §ePlayer186 has joined the game
+[14:40:55] [Thread-2250/INFO] (Minecraft) [System] [CHAT] <Player135> ok
+[14:40:55] [Thread-2244/INFO] (Minecraft) [System] [CHAT] <Player154> sorr ywrong ip
+[14:40:56] [Thread-2242/INFO] (Minecraft) [System] [CHAT] <Player83> hello yahi
+[14:40:56] [Thread-2249/INFO] (Minecraft) [System] [CHAT] <Player110> ok
+[14:40:56] [Thread-2251/INFO] (Minecraft) [System] [CHAT] <Player34> hello yahi
+[14:40:56] [Thread-2243/INFO] (Minecraft) [System] [CHAT] <Player91> hello yahi
+[14:40:56] [Thread-2248/INFO] (Minecraft) [System] [CHAT] <Player132> ok
+[14:40:56] [Thread-2239/INFO] (Minecraft) [System] [CHAT] <Player188> sorr ywrong ip
+[14:40:56] [Thread-2241/INFO] (Minecraft) [System] [CHAT] <Player19> fuck
+[14:40:56] [Thread-2245/INFO] (Minecraft) [System] [CHAT] <Player186> hello yahi
+[14:40:56] [Thread-2255/INFO] (Minecraft) [System] [CHAT] <Player179> fuck
+[14:40:56] [Thread-2235/INFO] (Minecraft) [System] [CHAT] <Player25> sorr ywrong ip
+[14:40:56] [Thread-2237/INFO] (Minecraft) [System] [CHAT] <Player219> sorr ywrong ip
+[14:40:56] [Thread-2247/INFO] (Minecraft) [System] [CHAT] <Player93> fuck
+[14:40:56] [Thread-2252/INFO] (Minecraft) [System] [CHAT] <Player145> fuck
+[14:40:56] [Thread-2238/INFO] (Minecraft) [System] [CHAT] <Player24> ok
+[14:40:56] [Thread-2236/INFO] (Minecraft) [System] [CHAT] <Player206> hello yahi
+[14:40:56] [Thread-2240/INFO] (Minecraft) [System] [CHAT] <Player3> hello yahi
+[14:40:56] [Thread-2253/INFO] (Minecraft) [System] [CHAT] <Player113> fuck
+[14:40:56] [Thread-2254/INFO] (Minecraft) [System] [CHAT] <Player247> hello yahi
+[14:40:56] [Thread-2246/INFO] (Minecraft) [System] [CHAT] <Player224> ok
+[14:40:57] [Thread-2250/INFO] (Minecraft) [System] [CHAT] §ePlayer135 has left the game
+[14:40:58] [Thread-2244/INFO] (Minecraft) [System] [CHAT] §ePlayer154 has left the game
+[14:40:58] [Thread-2249/INFO] (Minecraft) [System] [CHAT] §ePlayer110 has left the game
+[14:40:58] [Thread-2248/INFO] (Minecraft) [System] [CHAT] §ePlayer132 has left the game
+[14:40:58] [Thread-2237/INFO] (Minecraft) [System] [CHAT] §ePlayer219 has left the game
+[14:40:58] [Thread-2242/INFO] (Minecraft) [System] [CHAT] §ePlayer83 has left the game
+[14:40:58] [Thread-2236/INFO] (Minecraft) [System] [CHAT] §ePlayer206 has left the game
+[14:40:58] [Thread-2239/INFO] (Minecraft) [System] [CHAT] §ePlayer188 has left the game
+[14:40:58] [Thread-2235/INFO] (Minecraft) [System] [CHAT] §ePlayer25 has left the game
+[14:40:58] [Thread-2245/INFO] (Minecraft) [System] [CHAT] §ePlayer186 has left the game
+[14:40:58] [Thread-2247/INFO] (Minecraft) [System] [CHAT] §ePlayer93 has left the game
+[14:40:58] [Thread-2255/INFO] (Minecraft) [System] [CHAT] §ePlayer179 has left the game
+[14:40:58] [Thread-2243/INFO] (Minecraft) [System] [CHAT] §ePlayer91 has left the game
+[14:40:58] [Thread-2240/INFO] (Minecraft) [System] [CHAT] §ePlayer3 has left the game
+[14:40:58] [Thread-2251/INFO] (Minecraft) [System] [CHAT] §ePlayer34 has left the game
+[14:40:58] [Thread-2238/INFO] (Minecraft) [System] [CHAT] §ePlayer24 has left the game
+[14:40:58] [Thread-2254/INFO] (Minecraft) [System] [CHAT] §ePlayer247 has left the game
+[14:40:58] [Thread-2241/INFO] (Minecraft) [System] [CHAT] §ePlayer19 has left the game
+[14:40:58] [Thread-2252/INFO] (Minecraft) [System] [CHAT] §ePlayer145 has left the game
+[14:40:58] [Thread-2253/INFO] (Minecraft) [System] [CHAT] §ePlayer113 has left the game
+[14:40:58] [Thread-2246/INFO] (Minecraft) [System] [CHAT] §ePlayer224 has left the game
+[14:41:10] [Server thread/INFO] (Minecraft) [Player366] Message modified by the server. Original:
+[14:41:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Shroomlight
+[14:41:10] [Render thread/INFO] (Minecraft) [System] [CHAT] [Player366] Message modified by the server. Original:
+[14:41:10] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:41:33] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-399.5, y:118.0, z:-271.5
+[14:41:48] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game....... or else
+[14:41:54] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-399.5, y:118.0, z:-271.5
+[14:42:27] [Server thread/INFO] (Minecraft) %1$s was shot by %2$s using %3$s
+[14:42:27] [Render thread/INFO] (Minecraft) [System] [CHAT] %1$s was shot by %2$s using %3$s
+[14:42:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Monster Spawner
+[14:43:05] [Thread-2864/INFO] (Minecraft) [System] [CHAT] §ePlayer175 has joined the game
+[14:43:09] [Thread-2864/INFO] (Minecraft) [System] [CHAT] <Player175> hello yahi
+[14:43:11] [Thread-2864/INFO] (Minecraft) [System] [CHAT] §ePlayer175 has left the game
+[14:44:29] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): please buy our game we have 12 dollars in our budg et
+[14:44:38] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-503.08134646098875, y:120.00133597911214, z:-97.00197679429395
+[14:44:39] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-511.31546152397914, y:119.24918707874468, z:-100.26572710184475
+[14:44:46] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:44:46] [Thread-2870/INFO] (Minecraft) [System] [CHAT] §ePlayer49 has joined the game
+[14:44:50] [Thread-2870/INFO] (Minecraft) [System] [CHAT] <Player49> hello yahi
+[14:44:52] [Thread-2870/INFO] (Minecraft) [System] [CHAT] §ePlayer49 has left the game
+[14:44:54] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:44:56] [Render thread/INFO] (Minecraft) Loaded 162 advancements
+[14:45:16] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-710.7395072471131, y:105.92159999847412, z:-141.66293452840364
+[14:45:31] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:46:04] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game....... or else
+[14:46:22] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-845.0604750052099, y:82.17675927506424, z:-16.80389977485409
+[14:46:24] [Render thread/INFO] (Minecraft) Loaded 165 advancements
+[14:46:29] [Render thread/INFO] (Minecraft) Loaded 182 advancements
+[14:46:40] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-842.3000000119209, y:88.0, z:-3.974253416661901
+[14:46:43] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game to continue playing
+[14:46:56] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-832.6834663171718, y:91.24918707874468, z:1.7524052528504852
+[14:47:04] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-832.7940247782208, y:91.0, z:1.818055569367384
+[14:47:10] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:47:10] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-841.4763334350512, y:97.00133597911214, z:28.594517038870485
+[14:47:28] [Thread-3772/INFO] (Minecraft) [System] [CHAT] §ePlayer125 has joined the game
+[14:47:32] [Thread-3772/INFO] (Minecraft) [System] [CHAT] <Player125> sorr ywrong ip
+[14:47:34] [Thread-3772/INFO] (Minecraft) [System] [CHAT] §ePlayer125 has left the game
+[14:47:51] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-897.0403759254156, y:62.46328111936899, z:162.28447518815173
+[14:48:27] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-952.2811220799038, y:87.00133597911214, z:218.69999998807907
+[14:48:42] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): please buy our game we have 12 dollars in our budg et
+[14:48:45] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:48:58] [Render thread/INFO] (Minecraft) Loaded 182 advancements
+[14:49:15] [Thread-3774/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:49:29] [Render thread/INFO] (Minecraft) Loaded 182 advancements
+[14:49:43] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1173.571808222963, y:62.863580409854016, z:378.5137244604596
+[14:49:44] [Render thread/INFO] (Minecraft) Loaded 182 advancements
+[14:49:45] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[14:50:07] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:50:25] [Render thread/INFO] (Minecraft) Loaded 182 advancements
+[14:50:34] [Thread-4083/INFO] (Minecraft) [System] [CHAT] §ePlayer81 has joined the game
+[14:50:38] [Thread-4083/INFO] (Minecraft) [System] [CHAT] <Player81> sorr ywrong ip
+[14:50:40] [Thread-4083/INFO] (Minecraft) [System] [CHAT] §ePlayer81 has left the game
+[14:50:43] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1296.2035341349076, y:80.79673560066871, z:543.0898420064058
+[14:50:57] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game....... or else
+[14:50:58] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:51:27] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1404.1991033457352, y:69.0, z:661.4953506627346
+[14:51:28] [Render thread/INFO] (Minecraft) Loaded 185 advancements
+[14:51:30] [Render thread/INFO] (Minecraft) Loaded 185 advancements
+[14:51:34] [Thread-4391/INFO] (Minecraft) [System] [CHAT] §ePlayer79 has joined the game
+[14:51:34] [Thread-4403/INFO] (Minecraft) [System] [CHAT] §ePlayer11 has joined the game
+[14:51:34] [Thread-4392/INFO] (Minecraft) [System] [CHAT] §ePlayer147 has joined the game
+[14:51:34] [Thread-4390/INFO] (Minecraft) [System] [CHAT] §ePlayer191 has joined the game
+[14:51:34] [Thread-4406/INFO] (Minecraft) [System] [CHAT] §ePlayer175 has joined the game
+[14:51:34] [Thread-4398/INFO] (Minecraft) [System] [CHAT] §ePlayer36 has joined the game
+[14:51:34] [Thread-4388/INFO] (Minecraft) [System] [CHAT] §ePlayer102 has joined the game
+[14:51:34] [Thread-4396/INFO] (Minecraft) [System] [CHAT] §ePlayer141 has joined the game
+[14:51:34] [Thread-4405/INFO] (Minecraft) [System] [CHAT] §ePlayer206 has joined the game
+[14:51:34] [Thread-4394/INFO] (Minecraft) [System] [CHAT] §ePlayer181 has joined the game
+[14:51:34] [Thread-4389/INFO] (Minecraft) [System] [CHAT] §ePlayer179 has joined the game
+[14:51:34] [Thread-4395/INFO] (Minecraft) [System] [CHAT] §ePlayer9 has joined the game
+[14:51:34] [Thread-4400/INFO] (Minecraft) [System] [CHAT] §ePlayer27 has joined the game
+[14:51:34] [Thread-4397/INFO] (Minecraft) [System] [CHAT] §ePlayer158 has joined the game
+[14:51:34] [Thread-4401/INFO] (Minecraft) [System] [CHAT] §ePlayer172 has joined the game
+[14:51:34] [Thread-4399/INFO] (Minecraft) [System] [CHAT] §ePlayer27 has joined the game
+[14:51:34] [Thread-4408/INFO] (Minecraft) [System] [CHAT] §ePlayer25 has joined the game
+[14:51:34] [Thread-4393/INFO] (Minecraft) [System] [CHAT] §ePlayer156 has joined the game
+[14:51:34] [Thread-4407/INFO] (Minecraft) [System] [CHAT] §ePlayer210 has joined the game
+[14:51:34] [Thread-4402/INFO] (Minecraft) [System] [CHAT] §ePlayer136 has joined the game
+[14:51:34] [Thread-4404/INFO] (Minecraft) [System] [CHAT] §ePlayer119 has joined the game
+[14:51:38] [Thread-4395/INFO] (Minecraft) [System] [CHAT] <Player9> fuck
+[14:51:38] [Thread-4394/INFO] (Minecraft) [System] [CHAT] <Player181> fuck
+[14:51:38] [Thread-4392/INFO] (Minecraft) [System] [CHAT] <Player147> ok
+[14:51:38] [Thread-4405/INFO] (Minecraft) [System] [CHAT] <Player206> fuck
+[14:51:38] [Thread-4400/INFO] (Minecraft) [System] [CHAT] <Player27> fuck
+[14:51:38] [Thread-4396/INFO] (Minecraft) [System] [CHAT] <Player141> hello yahi
+[14:51:38] [Thread-4403/INFO] (Minecraft) [System] [CHAT] <Player11> fuck
+[14:51:38] [Thread-4390/INFO] (Minecraft) [System] [CHAT] <Player191> hello yahi
+[14:51:38] [Thread-4389/INFO] (Minecraft) [System] [CHAT] <Player179> sorr ywrong ip
+[14:51:38] [Thread-4397/INFO] (Minecraft) [System] [CHAT] <Player158> hello yahi
+[14:51:38] [Thread-4398/INFO] (Minecraft) [System] [CHAT] <Player36> ok
+[14:51:38] [Thread-4388/INFO] (Minecraft) [System] [CHAT] <Player102> sorr ywrong ip
+[14:51:38] [Thread-4393/INFO] (Minecraft) [System] [CHAT] <Player156> hello yahi
+[14:51:38] [Thread-4391/INFO] (Minecraft) [System] [CHAT] <Player79> hello yahi
+[14:51:38] [Thread-4399/INFO] (Minecraft) [System] [CHAT] <Player27> ok
+[14:51:38] [Thread-4406/INFO] (Minecraft) [System] [CHAT] <Player175> ok
+[14:51:38] [Thread-4401/INFO] (Minecraft) [System] [CHAT] <Player172> hello yahi
+[14:51:38] [Thread-4407/INFO] (Minecraft) [System] [CHAT] <Player210> sorr ywrong ip
+[14:51:38] [Thread-4408/INFO] (Minecraft) [System] [CHAT] <Player25> hello yahi
+[14:51:38] [Thread-4404/INFO] (Minecraft) [System] [CHAT] <Player119> hello yahi
+[14:51:38] [Thread-4402/INFO] (Minecraft) [System] [CHAT] <Player136> fuck
+[14:51:40] [Thread-4395/INFO] (Minecraft) [System] [CHAT] §ePlayer9 has left the game
+[14:51:40] [Thread-4400/INFO] (Minecraft) [System] [CHAT] §ePlayer27 has left the game
+[14:51:40] [Thread-4403/INFO] (Minecraft) [System] [CHAT] §ePlayer11 has left the game
+[14:51:40] [Thread-4392/INFO] (Minecraft) [System] [CHAT] §ePlayer147 has left the game
+[14:51:40] [Thread-4396/INFO] (Minecraft) [System] [CHAT] §ePlayer141 has left the game
+[14:51:40] [Thread-4391/INFO] (Minecraft) [System] [CHAT] §ePlayer79 has left the game
+[14:51:40] [Thread-4397/INFO] (Minecraft) [System] [CHAT] §ePlayer158 has left the game
+[14:51:40] [Thread-4394/INFO] (Minecraft) [System] [CHAT] §ePlayer181 has left the game
+[14:51:40] [Thread-4390/INFO] (Minecraft) [System] [CHAT] §ePlayer191 has left the game
+[14:51:40] [Thread-4398/INFO] (Minecraft) [System] [CHAT] §ePlayer36 has left the game
+[14:51:40] [Thread-4388/INFO] (Minecraft) [System] [CHAT] §ePlayer102 has left the game
+[14:51:40] [Thread-4389/INFO] (Minecraft) [System] [CHAT] §ePlayer179 has left the game
+[14:51:40] [Thread-4405/INFO] (Minecraft) [System] [CHAT] §ePlayer206 has left the game
+[14:51:40] [Thread-4408/INFO] (Minecraft) [System] [CHAT] §ePlayer25 has left the game
+[14:51:40] [Thread-4399/INFO] (Minecraft) [System] [CHAT] §ePlayer27 has left the game
+[14:51:40] [Thread-4393/INFO] (Minecraft) [System] [CHAT] §ePlayer156 has left the game
+[14:51:40] [Thread-4407/INFO] (Minecraft) [System] [CHAT] §ePlayer210 has left the game
+[14:51:40] [Thread-4406/INFO] (Minecraft) [System] [CHAT] §ePlayer175 has left the game
+[14:51:40] [Thread-4401/INFO] (Minecraft) [System] [CHAT] §ePlayer172 has left the game
+[14:51:40] [Thread-4404/INFO] (Minecraft) [System] [CHAT] §ePlayer119 has left the game
+[14:51:40] [Thread-4402/INFO] (Minecraft) [System] [CHAT] §ePlayer136 has left the game
+[14:52:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Shroomlight
+[14:52:36] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:52:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:52:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:52:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:52:55] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:53:02] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:53:06] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game....... or else
+[14:53:19] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:53:20] [Render thread/INFO] (Minecraft) [System] [CHAT] §l(System): Please buy the full version of the game to continue playing
+[14:53:25] [Thread-4413/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:53:39] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1669.3233836543754, y:98.162141421027, z:798.6999999880791
+[14:54:00] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:54:19] [Render thread/INFO] (Minecraft) Loaded 188 advancements
+[14:54:26] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1628.2826005129298, y:114.15487666386363, z:817.2471847351375
+[14:55:04] [Server thread/INFO] (Minecraft) [STDOUT]: hungry
+[14:55:24] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1546.8509673100689, y:69.58424000322906, z:856.3000000119209
+[14:55:33] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1547.9565486402228, y:69.0, z:854.4989032815643
+[14:55:50] [Server thread/INFO] (Minecraft) [STDOUT]: player pos (x:-1556.694060406835, y:94.25370773449858, z:854.6555581275202
+[14:55:53] [Server thread/ERROR] (Minecraft) Illegal option value JACK Default for translation{key='options.audioDevice', args=[]}
+[14:56:06] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:56:06] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:56:06] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:56:06] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:56:06] [Server thread/INFO] (Minecraft) Player366 lost connection: You have been idle for too long!
+[14:56:06] [Server thread/INFO] (Minecraft) Online players: Player366
+[14:56:06] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[14:56:06] [Server thread/INFO] (Minecraft) Stopping server
+[14:56:06] [Server thread/INFO] (Minecraft) Saving players
+[14:56:06] [Server thread/INFO] (Minecraft) Saving worlds
+[14:56:07] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:overworld
+[14:56:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_end
+[14:56:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Re-Create]'/minecraft:the_nether
+[14:56:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (Re-Create (2)): All chunks are saved
+[14:56:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:56:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:56:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:56:12] [Render thread/INFO] (Minecraft) Stopping!
