@@ -1,7 +1,7 @@
 # BrokenMinecraft
 
 ## Oh no! Our copy of Minecraft:tm:! It's broken!
-a simple fabric mod (made for yahiamice) that adds 30+ funny "bugs" that represent that feeling when you accidentally corrupt your game. (W.I.P.)
+a simple 1.20 fabric mod (made for yahiamice) that adds 30+ funny "bugs" that represent that feeling when you accidentally corrupt your game. (W.I.P.)
 
  Credits to contributors:
  - thevhproductions - suggesting ideas to the mod
