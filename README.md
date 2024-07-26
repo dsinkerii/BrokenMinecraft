@@ -1,5 +1,9 @@
 # BrokenMinecraft
 
+# quick note
+this mod was simply an idea i found interesting made by my friend thevhproductions, i dont find a reason to continue maintaining it nor fixing any bugs since im kind of done modding mc lol...
+
+
 ## Oh no! Our copy of Minecraft:tm:! It's broken!
 a simple 1.20 fabric mod (made for yahiamice) that adds 30+ funny "bugs" that represent that feeling when you accidentally corrupt your game. (W.I.P.)
 
